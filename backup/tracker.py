@@ -303,7 +303,7 @@ class SSTTracker:
         y = list()
         keys = res.keys()
         for id in keys:
-            y.append(sum(res[id]) / len(res[id]))
+            y.append(np.mean(res[id]))
 
         return np.array(y), list(keys)
 
